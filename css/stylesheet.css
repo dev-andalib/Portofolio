@@ -1,0 +1,378 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+a{
+    text-decoration: none;   
+}
+
+ul,li{
+    list-style-type: none;
+}
+
+.container{
+    padding-top: 30px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+body{
+    background: linear-gradient(#000,#3f48cc);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+
+/* ========================NAV=========================== */
+
+
+.nav_wrap{
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo{
+    color: white;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 60px;
+    font-family: 'Lobster', cursive;
+    
+}
+
+/* =================Reflection=============== */
+.logo::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 33px;
+  left: 13.3%;
+  
+/* Change the position of transformed element */
+  transform-origin: bottom;
+/*  Rotates around x-axis */
+  transform: rotateX(180deg);
+  line-height: 0.85em;
+/* linear-gradient defined by up,down,left ,right ,diagonal */
+  background-image: linear-gradient(0deg, #ffffff 0, transparent 95%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;         
+  opacity: 0.7;
+}
+/* =============================================== */
+
+.menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 60px;
+    justify-content: space-around;
+}
+.menu ul li a{
+    color: white;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 40px;
+    font-family: 'Black Ops One', cursive;
+    position: relative;
+}
+
+
+
+.menu ul li a:hover{
+  color: #aaa;
+}
+
+/* =================Reflection=============== */
+.menu ul li a::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;  
+/* Change the position of transformed element */
+  transform-origin: bottom;
+/*  Rotates around x-axis */
+  transform: rotateX(180deg);
+  line-height: 0.85em;
+/* linear-gradient defined by up,down,left ,right ,diagonal */
+  background-image: linear-gradient(0deg, #ffffff 0, transparent 95%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;         
+  opacity: 0.7;
+  transition: all linear 0.3s;
+}
+/* =============================================== */
+
+.menu ul li a:hover::after{
+  height: 83%;
+}
+/* ========================NAV=========================== */
+
+/* ========================BANNER=========================== */
+
+.ban_wrap{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    padding: 10rem 0;
+  
+}
+
+.ban{
+  width: 65%;
+}
+
+.ban_wrap h1,
+.ban_wrap h2 {
+  font-weight: 200;
+  margin: 0.4rem;
+}
+
+.ban_wrap h1 {
+  font-size: 8rem;
+  color: #aaa;
+}
+
+.ban_wrap h2 {
+  font-size: 2rem;
+  color: #aaa;
+}
+
+/* Cursor */
+.txt-type .txt {
+  /* border-right: solid 2px #777; */
+  padding-right: 3px;
+}
+
+.blinking-cursor {
+  color: #2e3d48;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+  from,
+  to {
+    color: #aaa;
+  }
+  50% {
+    color: transparent;
+  }
+}
+
+@media (min-width: 1200px) {
+    .ban_wrap  h1 {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .ban_wrap {
+    padding: 0 1;
+  }
+
+  .ban_wrap h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 500px) {
+    .ban_wrap  h1 {
+    font-size: 2.5;
+  }
+
+  .ban_wrap h2 {
+    font-size: 1.5rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* ========================BANNER=========================== */
+
+
+
+
+/* ========================PROJECTS=========================== */
+.project_wrap{
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.pro_head{
+    padding-top: 60px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: gainsboro;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.p{
+    width: 500px;
+    height: 360px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    box-shadow: 0px 0px 36px 0px rgba(245,243,243,0.75);
+    -webkit-box-shadow: 0px 0px 36px 0px rgba(245,243,243,0.75);
+    -moz-box-shadow: 0px 0px 36px 0px rgba(245,243,243,0.75);
+    border-radius: 5px;
+    
+}
+
+.p1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.644),rgba(0, 0, 0, 0.308)), url(../images/Screenshot_1.png);
+    background-position: center;
+}
+
+.p2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.644),rgba(0, 0, 0, 0.308)), url(../images/Screenshot_2.png);
+    background-position: left;
+}
+
+.p3{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.644),rgba(0, 0, 0, 0.308)), url(../images/Screenshot_3.png);
+}
+
+.p4{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.644),rgba(0, 0, 0, 0.308)), url(../images/Screenshot_4.png);
+    background-position: center;
+}
+
+.p5{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.644),rgba(0, 0, 0, 0.308)), url(../images/Screenshot_5.png);
+}
+
+/* ========================PROJECTS=========================== */
+
+
+
+/* ========================About Me=========================== */
+.about_wrap{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.img1{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo{
+  width: 500px;
+  height: 800px;
+  overflow: hidden;
+  object-position: right;
+}
+
+.photo h2{
+  color: aliceblue;
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  margin-bottom: 10px;
+  font-family: 'Rubik Mono One', sans-serif;
+
+}
+
+.photo h2::after{
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 1px;
+  background-color: aliceblue;
+  left: 42%;
+  bottom: 5px;
+}
+
+.info{
+  margin-top: 40px;
+  width: 900px;
+  height: 600px;
+}
+
+.about_me{
+  padding-top: 100px;
+  width: 600px;
+}
+
+.about_me p{
+  color: azure;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: left;
+  font-family: 'Courgette', cursive;
+}
+
+.work{
+  padding-top: 30px;
+  row-gap: 20px;
+}
+.work .tailwind img{
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+  display: inline-block;
+}
+
+.work i{
+  font-size: 35px;
+  color: rgb(252, 249, 246);
+}
+
+.css, .bootstrap, .tailwind, .react, .js{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+} 
+.work h3, .work p{
+  text-align: right;
+  font-size: 16px;
+  font-weight: 400;
+  color: bisque;
+  font-family: 'Mada', sans-serif;
+}
+
+.whatsapp, .gmail, .fb, .line, .wechat{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+/* ========================About Me=========================== */
+
+/* ========================Contact Me=========================== */
+.contact_wrap h2{
+  padding-top: 100px;
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 50px;
+  font-size: 700;
+  color: azure;
+  text-transform: capitalize;
+  text-align: center;
+}
+/* ========================Contact Me=========================== */
