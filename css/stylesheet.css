@@ -51,7 +51,7 @@ body{
   content: attr(data-text);
   position: absolute;
   top: 33px;
-  left: 13.3%;
+  left: 11.7%;
   
 /* Change the position of transformed element */
   transform-origin: bottom;
@@ -126,7 +126,7 @@ body{
 }
 
 .ban{
-  width: 65%;
+  width: 45%;
 }
 
 .ban_wrap h1,
@@ -399,7 +399,30 @@ body{
   font-size: 700;
   color: rgba(240, 255, 255, 0.747);
   text-transform: capitalize;
+  position: relative;
 }
+
+.contact_wrap h2::after{
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 3px;
+  background-color: aliceblue;
+  right: 95px;
+  bottom: 15px;
+}
+
+
+.contact_wrap h2::before{
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 3px;
+  background-color: aliceblue;
+  left: 95px;
+  bottom: 15px;
+}
+
 
 .contact_wrap i{
   font-size: 100px;
@@ -416,4 +439,40 @@ body{
   
 
 }
+
+.whatsapp:hover, .gmail:hover, .fb:hover, .line:hover, .wechat:hover{
+  color: rgb(88, 124, 112);
+}
+
+.wechat:hover a, .fb:hover a, .line:hover a{
+  color: rgb(88, 124, 112);
+}
+
+
 /* ========================Contact Me=========================== */
+
+
+/* ============================SLIDE BTN============================== */
+.stt{
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: #9fa3d1;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-color: #3f48cc;
+  border-style: double;
+  cursor: pointer;
+  text-align: center;
+}
+
+.stt i{
+  color: #030621;
+  padding: 5px 0;
+  font-size: 50px;
+}
+
+#btn{
+  height: 0;
+}

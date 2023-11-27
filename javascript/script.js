@@ -72,8 +72,29 @@ class TypeWritter {
 
 
 
+// ==========================BTN SLIDE ======================
+
+$(function(){
+  $(".stt").click(function(){
+    $("body, html").animate({
+      scrollTop:0
+    }, 1000)
+  })
+});
 
 
-
+// ========================== MENU SLIDE ======================
+$(function(){
+  $(".menulink").click(function(){
+    if (this.hash !== ""){
+      var hash = this.hash;
+      $("html,body").animate({
+        scrollTop: $(hash).offset().top
+      }, 300, function(){
+        window.location.hash = hash;
+      });
+    }
+  })
+});
 
 
