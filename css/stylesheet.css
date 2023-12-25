@@ -22,7 +22,7 @@ ul,li{
 
 body{
     background: linear-gradient(#000,#3f48cc);
-    height: 100%;
+    
     background-repeat: no-repeat;
     background-attachment: fixed;
 
@@ -143,13 +143,16 @@ body{
 .ban_wrap{
     display: flex;
     justify-content: space-between;
-    height: 100%;
+    
     padding: 10rem 0;
   
 }
 
+
+
 .ban{
   width: 45%;
+  height: 200px;
 }
 
 .ban_wrap h1,
@@ -205,17 +208,25 @@ body{
   }
 
   .ban_wrap h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
+  }
+
+  .ban_wrap{
+    padding: 2.5rem 0;
+  }
+
+  .ban{
+    height: 100px;
   }
 }
 
 @media (max-width: 500px) {
     .ban_wrap  h1 {
-    font-size: 2.5;
+    font-size: 1.5rem;
   }
 
   .ban_wrap h2 {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
 
@@ -281,6 +292,8 @@ body{
     
 }
 
+
+
 .p:hover{
   box-shadow: 0px 0px 36px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 0px 36px 0px rgba(0, 0, 0, 0.75);
@@ -310,6 +323,14 @@ body{
     background-image:linear-gradient(rgba(0, 0, 0, 0.644),rgba(0, 0, 0, 0.308)), url(../images/Screenshot_5.png);
 }
 
+@media (max-width:500px){
+  .p{
+    width: 300px;
+    background-position: center;
+  }
+}
+
+
 /* ========================PROJECTS=========================== */
 
 
@@ -328,11 +349,10 @@ body{
 }
 
 .img1{
-  width: 100%;
   height: 100%;
   object-fit: contain;
-  
 }
+
 
 .photo{
   width: 500px;
@@ -342,7 +362,7 @@ body{
 }
 
 .photo h2{
-  padding-left: 23%;
+  width: 100%;
   color: aliceblue;
   text-transform: capitalize;
   font-size: 30px;
@@ -359,23 +379,14 @@ body{
   width: 243px;
   height: 1px;
   background-color: aliceblue;
-  left: 50%;
-  transform: translateX(-7%);
+  left: 25%;
   bottom: 5px;
 }
 
 
 
-.info{
-  margin-top: 40px;
-  width: 900px;
-  height: 600px;
-}
 
-.about_me{
-  
-  width:100%;
-}
+
 
 .about_me p{
   color: azure;
@@ -413,18 +424,26 @@ body{
 }
 
 @media (max-width: 900px){
+
+  .about_wrap .photo{
+    width: 100%;
+    height: 600px;
+    margin-bottom: 40px;
+    
+  }
+
+  .about_wrap .photo {
+    padding: 0 auto;
+  }  
+
   .about_wrap{
     flex-direction: column;
     margin-bottom: 50px;
   }
-  .about_wrap .info{
+
+  .about_wrap .info, .about_wrap .photo{
     width: 100%;
   }
-
-  .about_wrap .photo{
-    width: 100%;
-  }
-
   .photo h2::after{
     visibility: hidden;
   }
@@ -435,6 +454,7 @@ body{
 /* ========================Contact Me=========================== */
 
 .contact_wrap{
+  width: 100%;
   text-align: center;
   color: #add8e6;
 }
@@ -444,7 +464,8 @@ body{
 .contact_wrap .content{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .contact_wrap p{
@@ -452,7 +473,7 @@ body{
   padding-bottom: 40px;
   font-family: 'Rubik Mono One', sans-serif;
   font-size: 30px;
-  font-size: 500;
+  font-weight: 500;
   color: rgba(240, 255, 255, 0.747);
 }
 
@@ -460,7 +481,7 @@ body{
   padding-top: 100px;
   font-family: 'Rubik Mono One', sans-serif;
   font-size: 50px;
-  font-size: 700;
+  font-weight: 700;
   color: rgba(240, 255, 255, 0.747);
   text-transform: capitalize;
   position: relative;
@@ -475,6 +496,7 @@ body{
   right: 95px;
   bottom: 15px;
 }
+
 
 
 .contact_wrap h2::before{
@@ -504,6 +526,22 @@ body{
 
 }
 
+@media (max-width:500px){
+  .contact_wrap h2::after{
+    display: none;
+  }
+
+  .contact_wrap h2::before{
+    display: none;
+  }
+  
+  .contact_wrap p{
+    padding-top: 35px;
+    padding-bottom: 20px;
+    font-size: 15px;
+  }
+}
+
 .whatsapp:hover, .gmail:hover, .fb:hover, .line:hover, .wechat:hover{
   color: rgb(88, 124, 112);
 }
@@ -516,7 +554,7 @@ body{
 /* ========================Contact Me=========================== */
 
 
-/* ============================SLIDE BTN============================== */
+/* ============================Scroll BTN============================== */
 .stt{
   width: 60px;
   height: 60px;
