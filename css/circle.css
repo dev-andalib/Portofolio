@@ -9,10 +9,11 @@
 		width:40%;
 		height:40%;
 		border-radius:100%;
-		margin:40px auto;
+		margin:40%, auto;
 		position:relative;
 	}
 	
+
 
 	.dotCircle{
 		width:100%;
@@ -41,8 +42,33 @@
 	}
 	
 
+	@media ( max-width: 1300px){
+		.holderCircle{
+			visibility: hidden;
+			position: absolute;
+		}
+
+
+	}
 	
-	
+	@media ( max-width: 1500px){
+
+		.dotCircle  .itemDot{
+			width: 150px;
+			height: 150px;
+		}
+
+	}
+
+
+	@media ( max-width: 1400px){
+
+		.dotCircle  .itemDot{
+			width: 100px;
+			height: 100px;
+		}
+
+	}
 
 	
 	.dotCircle  .itemDot .forActive{
