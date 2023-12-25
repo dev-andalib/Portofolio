@@ -164,6 +164,7 @@ body{
 .ban_wrap h1 {
   font-size: 8rem;
   color: #aaa;
+  margin-bottom: 10px;
 }
 
 .ban_wrap h2 {
@@ -251,8 +252,12 @@ body{
 
 
 /* ========================PROJECTS=========================== */
+
+#project{
+  margin-top: 80px;
+}
+
 .project_wrap{
-    padding-top: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
