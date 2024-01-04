@@ -504,7 +504,7 @@ body{
   height: 3px;
   background-color: aliceblue;
   right: 95px;
-  bottom: 15px;
+  bottom: 0;
 }
 
 
@@ -516,7 +516,7 @@ body{
   height: 3px;
   background-color: aliceblue;
   left: 95px;
-  bottom: 15px;
+  bottom: 0;
 }
 
 
@@ -536,7 +536,7 @@ body{
 
 }
 
-@media (max-width:500px){
+@media (max-width:1000px){
   .contact_wrap h2::after{
     display: none;
   }
