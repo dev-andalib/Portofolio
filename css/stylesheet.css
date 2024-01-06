@@ -330,7 +330,7 @@ body{
 }
 
 .p6{
-  background-image:linear-gradient(rgba(0, 0, 0, 0.644),rgba(0, 0, 0, 0.308)), url(../images/0.png);
+  background-image:linear-gradient(rgba(0, 0, 0, 0.644),rgba(0, 0, 0, 0.308)), url(../images/login.png);
   background-position: center;
 }
 
