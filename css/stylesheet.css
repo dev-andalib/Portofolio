@@ -34,7 +34,7 @@ body{
 
 .nav_wrap{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .logo{
