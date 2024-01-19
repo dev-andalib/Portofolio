@@ -120,25 +120,7 @@ body {
   height: 83%;
 }
 
-@media (max-width: 1085px) {
-  .nav_wrap {
-    flex-wrap: wrap;
-  }
-  .logo {
-    margin-bottom: 50px;
-  }
 
-  .menu {
-    padding-top: 10px;
-  }
-  .menu ul {
-    column-gap: 40px;
-  }
-
-  .menu ul li a {
-    font-size: 30px;
-  }
-}
 /* ========================NAV=========================== */
 
 /* ========================BANNER=========================== */
@@ -189,52 +171,16 @@ body {
 @keyframes blink {
   from,
   to {
-    color: #aaa;
+    color: #000000bf;
   }
   50% {
     color: transparent;
   }
 }
 
-@media (min-width: 1200px) {
-  .ban_wrap h1 {
-    font-size: 5rem;
-  }
-}
 
-@media (max-width: 800px) {
-  .ban_wrap {
-    padding: 0 1;
-  }
 
-  .ban_wrap h1 {
-    font-size: 2.5rem;
-  }
 
-  .ban_wrap {
-    padding: 2.5rem 0;
-  }
-
-  .ban {
-    height: 100px;
-  }
-}
-
-@media (max-width: 500px) {
-  .ban_wrap h1 {
-    font-size: 1.5rem;
-  }
-
-  .ban_wrap h2 {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 1300px) {
-  .ban {
-    width: 100%;
-  }
-}
 
 /* ========================BANNER=========================== */
 
@@ -323,12 +269,7 @@ body {
   background-position: center;
 }
 
-@media (max-width: 500px) {
-  .p {
-    width: 300px;
-    background-position: center;
-  }
-}
+
 
 /* ========================PROJECTS=========================== */
 
@@ -419,30 +360,7 @@ body {
   font-family: "Mada", sans-serif;
 }
 
-@media (max-width: 900px) {
-  .about_wrap .photo {
-    width: 100%;
-    height: 600px;
-    margin-bottom: 40px;
-  }
 
-  .about_wrap .photo {
-    padding: 0 auto;
-  }
-
-  .about_wrap {
-    flex-direction: column;
-    margin-bottom: 50px;
-  }
-
-  .about_wrap .info,
-  .about_wrap .photo {
-    width: 100%;
-  }
-  .photo h2::after {
-    visibility: hidden;
-  }
-}
 
 /* ========================About Me=========================== */
 
@@ -514,21 +432,6 @@ body {
   color: #add8e6;
 }
 
-@media (max-width: 1000px) {
-  .contact_wrap h2::after {
-    display: none;
-  }
-
-  .contact_wrap h2::before {
-    display: none;
-  }
-
-  .contact_wrap p {
-    padding-top: 35px;
-    padding-bottom: 20px;
-    font-size: 15px;
-  }
-}
 
 .whatsapp:hover,
 .gmail:hover,
