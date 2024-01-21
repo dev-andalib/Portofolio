@@ -1,4 +1,8 @@
-* {
+html{
+  font-size: 62.5%;
+}
+
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -14,10 +18,10 @@ li {
 }
 
 .container {
-  padding-top: 30px;
-  width: 90%;
+  padding-top: 3rem;
+  width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 2rem;
 }
 
 body {
@@ -41,30 +45,31 @@ body {
 .nav_wrap {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
   color: #000000bf;
   text-transform: capitalize;
   font-weight: 700;
-  font-size: 60px;
+  font-size: 6rem;
   font-family: "Lobster", cursive;
   position: relative;
-  padding-right: 20px;
+  padding-right: 2rem;
 }
 
 /* =================Reflection=============== */
 .logo::after {
   content: attr(data-text);
   position: absolute;
-  top: 25px;
+  top: 0.5rem;
   left: 0;
 
   /* Change the position of transformed element */
   transform-origin: bottom;
   /*  Rotates around x-axis */
   transform: rotateX(180deg);
-  line-height: 0.85em;
+  line-height: 5rem;
   /* linear-gradient defined by up,down,left ,right ,diagonal */
   background-image: linear-gradient(0deg, #000000bf 0, transparent 95%);
   background-clip: text;
@@ -77,15 +82,16 @@ body {
 .menu ul {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 60px;
-  row-gap: 40px;
-  justify-content: space-around;
+  column-gap: 3rem;
+  row-gap: 4rem;
+  justify-content: space-between;
+  align-items: center;
 }
 .menu ul li a {
   color: white;
   text-transform: capitalize;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 3rem;
   font-family: "Black Ops One", cursive;
   position: relative;
 }
