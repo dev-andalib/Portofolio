@@ -1,5 +1,0 @@
-Hello there, I checked out the sample site link that you gave and I think I can do the job. You just need a responsive design with custom CSS animations and a little bit of Javascript functionality to make those texts appear only after the browser window has been scrolled down to a certain height. 
-
-Below is a design image of a webpage and this link     https://dev-andalib.github.io/Waxom/   will take you to the webpage I made so do check it out
-
-You can also check out the highlights section for my portfolio website, in the project section of my portfolio website you can find the other webpages I have worked on. 

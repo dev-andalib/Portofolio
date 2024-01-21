@@ -1,5 +1,0 @@
-pop up on hover for projects and box shadow in normal times
-make the icons round border
-fix tailwind icon
-
-
