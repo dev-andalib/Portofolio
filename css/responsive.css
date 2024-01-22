@@ -668,3 +668,48 @@
     }
   }
 }
+
+
+@media screen and (max-width:340px) {
+  @keyframes leftToright {
+    0% {
+      rotate: 0deg;
+      left: 10%;
+    }
+
+    12.5% {
+      rotate: 90deg;
+      left: 15%;
+    }
+
+    25% {
+      rotate: 180deg;
+      left: 25%;
+    }
+
+    37.5% {
+      rotate: 270deg;
+      left: 37.5%;
+    }
+
+    50% {
+      rotate: 360deg;
+      left: 45%;
+    }
+
+    62.5% {
+      rotate: 450deg;
+      left: 50%;
+    }
+
+    75% {
+      rotate: 540deg;
+      left: 53%;
+    }
+
+    100% {
+      rotate: 630deg;
+      left: 55%;
+    }
+  }
+}
