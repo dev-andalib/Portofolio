@@ -43,7 +43,7 @@
   }
 
   .tools {
-    left: -30%;
+    left: 2%;
     bottom: -21rem;
 
     animation: leftToright 2s infinite alternate linear;
@@ -52,12 +52,12 @@
   @keyframes leftToright {
     0% {
       rotate: 0deg;
-      left: -30%;
+      left: 2%;
     }
 
     12.5% {
       rotate: 90deg;
-      left: -10%;
+      left: 10%;
     }
 
     25% {
@@ -82,17 +82,12 @@
 
     75% {
       rotate: 540deg;
-      left: 75%;
-    }
-
-    87.5% {
-      rotate: 630deg;
-      left: 87.5%;
+      left: 70%;
     }
 
     100% {
-      rotate: 720deg;
-      left: 100%;
+      rotate: 630deg;
+      left: 75%;
     }
   }
   .tools__img {
@@ -283,12 +278,98 @@
   .contact_wrap h2::before {
     display: none;
   }
+
+  @keyframes leftToright {
+    0% {
+      rotate: 0deg;
+      left: 2%;
+    }
+
+    12.5% {
+      rotate: 90deg;
+      left: 10%;
+    }
+
+    25% {
+      rotate: 180deg;
+      left: 25%;
+    }
+
+    37.5% {
+      rotate: 270deg;
+      left: 37.5%;
+    }
+
+    50% {
+      rotate: 360deg;
+      left: 50%;
+    }
+
+    62.5% {
+      rotate: 450deg;
+      left: 62.5%;
+    }
+
+    75% {
+      rotate: 540deg;
+      left: 67%;
+    }
+
+    100% {
+      rotate: 630deg;
+      left: 70%;
+    }
+  }
 }
 
 @media screen and (max-width: 830px) {
   .nav_wrap {
     justify-content: center;
     row-gap: 0;
+  }
+}
+
+@media screen and (max-width: 730px){
+  @keyframes leftToright {
+    0% {
+      rotate: 0deg;
+      left: 2%;
+    }
+
+    12.5% {
+      rotate: 90deg;
+      left: 10%;
+    }
+
+    25% {
+      rotate: 180deg;
+      left: 25%;
+    }
+
+    37.5% {
+      rotate: 270deg;
+      left: 37.5%;
+    }
+
+    50% {
+      rotate: 360deg;
+      left: 50%;
+    }
+
+    62.5% {
+      rotate: 450deg;
+      left: 55%;
+    }
+
+    75% {
+      rotate: 540deg;
+      left: 60%;
+    }
+
+    100% {
+      rotate: 630deg;
+      left: 63%;
+    }
   }
 }
 
@@ -300,6 +381,47 @@
   }
   .viewmore {
     display: block;
+  }
+  @keyframes leftToright {
+    0% {
+      rotate: 0deg;
+      left: 2%;
+    }
+
+    12.5% {
+      rotate: 90deg;
+      left: 10%;
+    }
+
+    25% {
+      rotate: 180deg;
+      left: 25%;
+    }
+
+    37.5% {
+      rotate: 270deg;
+      left: 37.5%;
+    }
+
+    50% {
+      rotate: 360deg;
+      left: 50%;
+    }
+
+    62.5% {
+      rotate: 450deg;
+      left: 55%;
+    }
+
+    75% {
+      rotate: 540deg;
+      left: 60%;
+    }
+
+    100% {
+      rotate: 630deg;
+      left: 65%;
+    }
   }
 }
 
@@ -502,5 +624,47 @@
   .work h3,
   .work p {
     font-size: 1.2rem;
+  }
+
+  @keyframes leftToright {
+    0% {
+      rotate: 0deg;
+      left: 2%;
+    }
+
+    12.5% {
+      rotate: 90deg;
+      left: 10%;
+    }
+
+    25% {
+      rotate: 180deg;
+      left: 25%;
+    }
+
+    37.5% {
+      rotate: 270deg;
+      left: 37.5%;
+    }
+
+    50% {
+      rotate: 360deg;
+      left: 50%;
+    }
+
+    62.5% {
+      rotate: 450deg;
+      left: 54%;
+    }
+
+    75% {
+      rotate: 540deg;
+      left: 57%;
+    }
+
+    100% {
+      rotate: 630deg;
+      left: 60%;
+    }
   }
 }

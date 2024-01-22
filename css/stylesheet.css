@@ -137,10 +137,12 @@ li {
   justify-content: space-between;
   align-items: center;
   padding: 10rem 0;
+  height: 89rem;
 }
 
 .ban {
   width: 50rem;
+  
 }
 
 .ban_wrap h1,
