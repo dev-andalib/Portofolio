@@ -99,3 +99,12 @@ $(function(){
 
 
 $(window).resize(function(){location.reload()});
+
+$(document).ready(function(){
+  $('.project_snap').slick({
+    arrows: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 500,
+  });
+});

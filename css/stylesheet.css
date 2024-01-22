@@ -2,6 +2,24 @@ html{
   font-size: 62.5%;
 }
 
+
+body {
+  background: linear-gradient(
+    245deg,
+    #0d0140,
+    #140370,
+    #194b91,
+    #5c9ce6,
+    #74b8e8,
+    #02b6f7,
+    #02d3f7
+  );
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Roboto', sans-serif;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -24,21 +42,7 @@ li {
   padding: 2rem;
 }
 
-body {
-  background: linear-gradient(
-    245deg,
-    #0d0140,
-    #140370,
-    #194b91,
-    #5c9ce6,
-    #74b8e8,
-    #02b6f7,
-    #02d3f7
-  );
 
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
 
 /* ========================NAV=========================== */
 
@@ -46,6 +50,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -81,7 +86,6 @@ body {
 
 .menu ul {
   display: flex;
-  flex-wrap: wrap;
   column-gap: 3rem;
   row-gap: 4rem;
   justify-content: space-between;
@@ -92,8 +96,8 @@ body {
   text-transform: capitalize;
   font-weight: 700;
   font-size: 3rem;
-  font-family: "Black Ops One", cursive;
   position: relative;
+  white-space: nowrap;
 }
 
 .menu ul li a:hover {
@@ -111,7 +115,7 @@ body {
   transform-origin: bottom;
   /*  Rotates around x-axis */
   transform: rotateX(180deg);
-  line-height: 0.85em;
+  line-height:5rem;
   /* linear-gradient defined by up,down,left ,right ,diagonal */
   background-image: linear-gradient(0deg, #ffffff 0, transparent 95%);
   background-clip: text;
@@ -133,18 +137,20 @@ body {
 
 .ban_wrap {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
   padding: 10rem 0;
 }
 
 .ban {
-  width: 55%;
-  height: 200px;
+  width: 50rem;
+  
 }
 
 .ban_wrap h1,
 .ban_wrap h2 {
-  font-weight: 200;
+  font-weight: 500;
   margin: 0.4rem;
 }
 
@@ -152,10 +158,11 @@ body {
   font-size: 8rem;
   color: #000000bf;
   margin-bottom: 10px;
+  height: 300px;
 }
 
 .ban_wrap h2 {
-  font-size: 2rem;
+  font-size: 4rem;
   color: #000000bf;
 }
 
@@ -184,8 +191,37 @@ body {
   }
 }
 
+.slider_col{
+  position: relative;
+  width: 50rem;
+}
 
 
+.tools{
+  width: 20rem;
+  height: 20rem;
+  background-color: gold;
+  border-radius: 100%;
+  position: absolute;
+  left: -7rem;
+  bottom: -2rem;
+  z-index: 300;
+}
+
+.project_snap{
+  width: 47rem;
+  height: 370px;
+  margin-left: 3rem;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.project__photo img{
+  width: 47rem;
+  object-fit: contain;
+  height: 370px;
+}
 
 
 /* ========================BANNER=========================== */
