@@ -118,6 +118,14 @@ $(document).ready(function () {
         );
       }
     });
+
+    
+  });
+
+
+  $(function(){
+    var containerEl = document.querySelector(".mixit_main");
+    var mixer = mixitup(containerEl,{animation:{duration:1000}});
   });
 });
 

@@ -102,6 +102,11 @@
   .menu ul {
     column-gap: 2rem;
   }
+
+  .mixit_btn button{
+    font-size: .9rem;
+    font-weight: 400;
+  }
 }
 
 @media screen and (max-width: 830px) {
@@ -109,6 +114,13 @@
     justify-content: center;
     row-gap: 0;
   }
+}
+
+@media screen and (max-width: 660px){
+  .info, .mixit_btn, .close{
+    display: none;
+  }
+  
 }
 
 @media screen and (max-width: 630px) {
