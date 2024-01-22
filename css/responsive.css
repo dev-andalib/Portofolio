@@ -1,6 +1,19 @@
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1210px) {
   .container {
     width: 100%;
+  }
+  .contact_wrap {
+    width: 100rem;
+  }
+
+  .contact_wrap h2::after {
+    width: 27rem;
+    right: -26rem;
+  }
+
+  .contact_wrap h2::before {
+    width: 27rem;
+    left: -26rem;
   }
 }
 
@@ -153,6 +166,36 @@
   .work p {
     font-size: 1.6rem;
   }
+
+  .contact_wrap {
+    width: 80rem;
+  }
+
+  .contact_wrap h2::after {
+    width: 17rem;
+    right: -16rem;
+  }
+
+  .contact_wrap h2::before {
+    width: 17rem;
+    left: -16rem;
+  }
+
+  .contact_wrap i {
+    font-size: 5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .hover-effect {
+    padding-top: 0.8rem;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 2rem;
+  }
+
+  .hotline h3 {
+    font-size: 2rem;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -218,6 +261,27 @@
     width: 3rem;
     height: 3rem;
     border-radius: 0.2rem;
+  }
+
+  .contact_wrap {
+    width: 50rem;
+    padding: 1rem 0;
+  }
+
+  .contact_wrap p {
+    font-size: 2rem;
+    padding-top: 2rem;
+  }
+
+  .contact_wrap h2 {
+    padding-top: 1rem;
+    font-size: 5rem;
+    width: 100%;
+  }
+
+  .contact_wrap h2::after,
+  .contact_wrap h2::before {
+    display: none;
   }
 }
 
@@ -325,8 +389,41 @@
   }
 }
 
+@media screen and (max-width: 550px) {
+  #contact {
+    margin-top: 2rem;
+  }
+  .contact_wrap {
+    width: 32rem;
+  }
+  .contact_wrap p {
+    font-size: 1.2rem;
+  }
+
+  .contact_wrap h2 {
+    font-size: 1.8rem;
+  }
+
+  .contact_wrap i {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .hover-effect {
+    padding-top: 0.4rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 2rem;
+  }
+
+  .hotline h3 {
+    margin: 1.5rem 4rem;
+    font-size: 1rem;
+  }
+}
+
 @media screen and (max-width: 486px) {
-  .container{
+  .container {
     padding: 0;
   }
   .logo {
@@ -387,13 +484,11 @@
   .img1 {
     width: 30rem;
   }
-  
 
   .photo h2::after {
     width: 14.7rem;
     right: -14.5rem;
   }
-
 
   .about_me p {
     width: 30rem;

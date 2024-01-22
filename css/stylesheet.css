@@ -403,8 +403,7 @@ li {
   width: 40rem;
   overflow: hidden;
   border-radius: 25px;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.438);;
-
+  border-bottom: 2px solid rgba(255, 255, 255, 0.438);
 }
 
 .img1 {
@@ -486,96 +485,108 @@ li {
 /* ========================Contact Me=========================== */
 
 .contact_wrap {
-  width: 100%;
   text-align: center;
   color: #add8e6;
+  padding: 3rem;
+  border-radius: 40px;
+  background-color: rgba(0, 0, 0, 0.301);
+  overflow: hidden;
+  width: 116rem;
+  margin: 0 auto;
 }
 
 .contact_wrap .content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  width: 100%;
 }
 
 .contact_wrap p {
-  padding-top: 70px;
-  padding-bottom: 40px;
+  padding-top: 7rem;
+  padding-bottom: 3rem;
   font-family: "Rubik Mono One", sans-serif;
-  font-size: 30px;
+  font-size: 3rem;
   font-weight: 500;
   color: rgba(240, 255, 255, 0.747);
 }
 
 .contact_wrap h2 {
-  padding-top: 100px;
+  padding-top: 5rem;
   font-family: "Rubik Mono One", sans-serif;
-  font-size: 50px;
+  font-size: 5rem;
   font-weight: 700;
   color: rgba(240, 255, 255, 0.747);
   text-transform: capitalize;
   position: relative;
+  width: 46rem;
+  margin: 0 auto;
 }
 
 .contact_wrap h2::after {
   content: "";
   position: absolute;
-  width: 400px;
-  height: 3px;
+  width: 35rem;
+  height: 0.3rem;
   background-color: aliceblue;
-  right: 95px;
+  right: -34rem;
   bottom: 0;
 }
 
 .contact_wrap h2::before {
   content: "";
   position: absolute;
-  width: 400px;
-  height: 3px;
+  width: 35rem;
+  height: 0.3rem;
   background-color: aliceblue;
-  left: 95px;
+  left: -34rem;
   bottom: 0;
 }
 
 .contact_wrap i {
-  font-size: 100px;
+  font-size: 7rem;
   display: block;
-  padding: 30px;
+  color: #fff;
+  margin-bottom: 1rem;
 }
 
-.contact_wrap a {
+
+
+.hover-effect {
+  padding-top: 3rem;
+  background-color: #753fcc2f;
+  border-radius: 4rem;
+  width: 15rem;
+  height: 15rem;
+  border: 0.2rem solid #753fcc;
+  cursor: pointer;
+  margin-top: 2rem;
+  transition: all linear 0.3s;
+}
+
+.hover-effect:hover {
+  margin-top: 0;
+}
+
+.hotline h3 {
+  margin: 3rem 4rem;
+  text-transform: lowercase;
+  font-size: 3rem;
+}
+.hotline h3 span {
   text-transform: capitalize;
-  font-size: medium;
-  font-weight: 600;
-  font-family: "Times New Roman", Times, serif;
-  color: #add8e6;
-}
-
-.whatsapp:hover,
-.gmail:hover,
-.fb:hover,
-.line:hover,
-.wechat:hover {
-  color: rgb(88, 124, 112);
-}
-
-.wechat:hover a,
-.fb:hover a,
-.line:hover a {
-  color: rgb(88, 124, 112);
 }
 
 /* ========================Contact Me=========================== */
 
 /* ============================Scroll BTN============================== */
 .stt {
-  width: 60px;
-  height: 60px;
+  width: 6rem;
+  height: 6rem;
   border-radius: 100%;
   background-color: #9fa3d1;
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 2rem;
+  right: 2rem;
   border-color: #3f48cc;
   border-style: double;
   cursor: pointer;
@@ -585,8 +596,8 @@ li {
 
 .stt i {
   color: #030621;
-  padding: 5px 0;
-  font-size: 50px;
+  padding: 0.5rem 0;
+  font-size: 5rem;
 }
 
 #btn {

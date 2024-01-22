@@ -111,7 +111,7 @@ $(document).ready(function () {
           {
             scrollTop: $(hash).offset().top,
           },
-          300,
+          1000,
           function () {
             window.location.hash = hash;
           }
