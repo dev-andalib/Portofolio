@@ -73,9 +73,7 @@ function init() {
 // ========================== MENU SLIDE ======================
 
 
-$(window).resize(function () {
-  location.reload();
-});
+
 
 $(document).ready(function () {
   $(".project_snap").slick({
