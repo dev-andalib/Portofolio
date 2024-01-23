@@ -44,7 +44,7 @@
 
   .tools {
     left: 2%;
-    bottom: -21rem;
+    bottom: -15rem;
 
     animation: leftToright 2s infinite alternate linear;
   }
@@ -129,7 +129,7 @@
     font-size: 2rem;
     font-weight: 300;
     text-align: left;
-    font-family: "Courgette", cursive;
+
     border: 2px solid rgba(255, 255, 255, 0.438);
     border-radius: 25px;
     padding: 1rem;
@@ -204,7 +204,6 @@
 
   .mixit_btn button {
     font-size: 0.9rem;
-    font-weight: 400;
   }
 }
 
@@ -327,9 +326,54 @@
     justify-content: center;
     row-gap: 0;
   }
+  .tools {
+    bottom: -16rem;
+  }
 }
 
-@media screen and (max-width: 730px){
+@media screen and (max-width: 784px) {
+  
+  .nav_wrap {
+    display: block;
+    position: relative;
+  }
+  .logo {
+    color: #ffffffc5;
+    text-align: center;
+  }
+  .logo::after {
+    display: none;
+  }
+
+  .menu {
+    background-color: rgba(0, 0, 0, 0.596);
+    position: absolute;
+    width: 100%;
+    
+  }
+  .menu ul {
+    row-gap: 2rem;
+    display: block;
+    padding-left: 2.5rem;
+  }
+
+  .menu ul li {
+    width: 200px;
+    margin: 0 auto;
+  }
+
+  .menu ul li a::after {
+    display: none;
+  }
+
+
+
+  .ban_wrap{
+    padding: 5rem;
+  }
+}
+
+@media screen and (max-width: 730px) {
   @keyframes leftToright {
     0% {
       rotate: 0deg;
@@ -423,6 +467,10 @@
       left: 65%;
     }
   }
+
+  .tools {
+    bottom: -16rem;
+  }
 }
 
 @media screen and (max-width: 630px) {
@@ -512,6 +560,14 @@
 }
 
 @media screen and (max-width: 550px) {
+  .ban_wrap {
+    padding: 3rem 0;
+  }
+
+  .tools {
+    margin-bottom: 13rem;
+  }
+
   #contact {
     margin-top: 2rem;
   }
@@ -541,6 +597,9 @@
   .hotline h3 {
     margin: 1.5rem 4rem;
     font-size: 1rem;
+  }
+  .contact_wrap p {
+    padding-bottom: 0.5rem;
   }
 }
 
@@ -668,13 +727,12 @@
     }
   }
 
-  .fb{
-    padding-top: .6rem;
+  .fb {
+    padding-top: 0.6rem;
   }
 }
 
-
-@media screen and (max-width:340px) {
+@media screen and (max-width: 340px) {
   @keyframes leftToright {
     0% {
       rotate: 0deg;

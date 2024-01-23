@@ -55,7 +55,7 @@ li {
   text-transform: capitalize;
   font-weight: 700;
   font-size: 6rem;
-  font-family: "Lobster", cursive;
+  
   position: relative;
   padding-right: 2rem;
 }
@@ -137,7 +137,6 @@ li {
   justify-content: space-between;
   align-items: center;
   padding: 10rem 0;
-  height: 89rem;
 }
 
 .ban {
@@ -276,7 +275,7 @@ li {
   overflow: hidden;
   border-radius: 10px;
   cursor: pointer;
-  color: #fff;
+  color: #ffffffd3;
   font-size: 1.5rem;
   font-weight: 600;
 }
@@ -302,7 +301,7 @@ li {
   font-weight: 500;
   margin-bottom: 2rem;
   color: gainsboro;
-  font-family: "Permanent Marker", cursive;
+  
 }
 
 .mix {
@@ -337,7 +336,7 @@ li {
 .p2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.644), rgba(0, 0, 0, 0.308)),
     url(../images/Screenshot_5.png);
-  background-position: left;
+  background-position: center;
 }
 
 .p3 {
@@ -422,7 +421,7 @@ li {
   font-weight: 600;
   position: relative;
   margin-bottom: 10px;
-  font-family: "Rubik Mono One", sans-serif;
+  
   letter-spacing: 0.2rem;
 }
 
@@ -441,7 +440,7 @@ li {
   font-size: 2rem;
   font-weight: 300;
   text-align: left;
-  font-family: "Courgette", cursive;
+  
   border: 2px solid rgba(255, 255, 255, 0.438);
   border-radius: 25px;
   padding: 1rem;
@@ -479,7 +478,7 @@ li {
   font-size: 2.2rem;
   font-weight: 500;
   color: black;
-  font-family: "Mada", sans-serif;
+  
 }
 
 /* ========================About Me=========================== */
@@ -506,7 +505,7 @@ li {
 .contact_wrap p {
   padding-top: 7rem;
   padding-bottom: 3rem;
-  font-family: "Rubik Mono One", sans-serif;
+
   font-size: 3rem;
   font-weight: 500;
   color: rgba(240, 255, 255, 0.747);
@@ -514,7 +513,7 @@ li {
 
 .contact_wrap h2 {
   padding-top: 5rem;
-  font-family: "Rubik Mono One", sans-serif;
+
   font-size: 5rem;
   font-weight: 700;
   color: rgba(240, 255, 255, 0.747);
