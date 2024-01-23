@@ -339,7 +339,6 @@
   }
   .logo {
     color: #ffffffc5;
-    text-align: center;
   }
   .logo::after {
     display: none;
