@@ -15,8 +15,9 @@ body {
   );
 
   background-repeat: no-repeat;
-  background-attachment: fixed;
   font-family: "Roboto", sans-serif;
+  background-size: cover;
+  background-position: center;
 }
 
 * {
@@ -38,7 +39,7 @@ li {
   padding-top: 3rem;
   width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0 2rem;
 }
 
 /* ========================NAV=========================== */
@@ -55,9 +56,8 @@ li {
   text-transform: capitalize;
   font-weight: 700;
   font-size: 6rem;
-  
-  position: relative;
   padding-right: 2rem;
+  position: relative;
 }
 
 /* =================Reflection=============== */
@@ -80,6 +80,18 @@ li {
   opacity: 0.7;
 }
 /* =============================================== */
+.menu__container {
+  border-radius: 5px;
+  border: 1px solid #ffffffab;
+  padding: 0.5rem;
+  display: none;
+}
+.fa-bars {
+  color: #ffffffab;
+  font-size: 2.5rem; 
+}
+
+
 
 .menu ul {
   display: flex;
@@ -141,7 +153,6 @@ li {
 
 .ban {
   width: 50rem;
-  
 }
 
 .ban_wrap h1,
@@ -301,7 +312,6 @@ li {
   font-weight: 500;
   margin-bottom: 2rem;
   color: gainsboro;
-  
 }
 
 .mix {
@@ -421,7 +431,7 @@ li {
   font-weight: 600;
   position: relative;
   margin-bottom: 10px;
-  
+
   letter-spacing: 0.2rem;
 }
 
@@ -440,7 +450,7 @@ li {
   font-size: 2rem;
   font-weight: 300;
   text-align: left;
-  
+
   border: 2px solid rgba(255, 255, 255, 0.438);
   border-radius: 25px;
   padding: 1rem;
@@ -478,7 +488,6 @@ li {
   font-size: 2.2rem;
   font-weight: 500;
   color: black;
-  
 }
 
 /* ========================About Me=========================== */
@@ -487,13 +496,13 @@ li {
 
 .contact_wrap {
   text-align: center;
-  color: #add8e6;
   padding: 3rem;
   border-radius: 40px;
   background-color: rgba(0, 0, 0, 0.301);
   overflow: hidden;
   width: 116rem;
-  margin: 0 auto;
+  margin: 5rem auto;
+  border: 1px solid #ffffffa2;
 }
 
 .contact_wrap .content {
@@ -550,8 +559,6 @@ li {
   margin-bottom: 1rem;
 }
 
-
-
 .hover-effect {
   padding-top: 3rem;
   background-color: #753fcc2f;
@@ -572,9 +579,11 @@ li {
   margin: 3rem 4rem;
   text-transform: lowercase;
   font-size: 3rem;
+  color: rgba(240, 255, 255, 0.747);
 }
 .hotline h3 span {
   text-transform: capitalize;
+  color: rgba(240, 255, 255, 0.747);
 }
 
 /* ========================Contact Me=========================== */

@@ -66,11 +66,6 @@ function init() {
 
 //   =======================CAROUSEL=====================
 
-// ==========================BTN SLIDE ======================
-
-
-
-// ========================== MENU SLIDE ======================
 
 
 
@@ -81,17 +76,25 @@ $(document).ready(function () {
     infinite: true,
     autoplay: true,
     autoplaySpeed: 500,
+    pauseOnFocus: false
   });
 
-  $('.tools').slick({
+  $(".tools").slick({
     arrows: false,
     infinite: true,
     autoplay: true,
     autoplaySpeed: 2000,
-  })
+    pauseOnFocus: false,
+    verticalSwiping: true,
+    
+  });
 
 
 
+
+
+
+// ==========================BTN SLIDE ======================
   $(function () {
     $(".stt").click(function () {
       $("body, html").animate(
@@ -101,30 +104,88 @@ $(document).ready(function () {
         1000
       );
     });
-  
-    $(".menulink").click(function () {
+
+
+
+  // ========================== MENU SLIDE ======================
+
+    $(".menulink").click(function (e) {
+
+      e.preventDefault()
+
+
       if (this.hash !== "") {
         var hash = this.hash;
         $("html,body").animate(
           {
             scrollTop: $(hash).offset().top,
+            
           },
-          1000,
+          500,
           function () {
             window.location.hash = hash;
           }
         );
+        
+      }
+      var vw = Math.max(
+        document.documentElement.clientWidth,
+        window.innerWidth || 0
+      );
+      if (vw < 785) {
+        $(".menu").hide();
       }
     });
-
-    
   });
 
 
-  $(function(){
+
+// _____________________________mixit_______________________________________________
+  $(function () {
     var containerEl = document.querySelector(".mixit_main");
-    var mixer = mixitup(containerEl,{animation:{duration:1000}});
+    var mixer = mixitup(containerEl, { animation: { duration: 1000 } });
   });
 });
 
 
+
+
+
+// ______________________________MENU TOGGLE_____________________________________
+
+$(document).ready(function () {
+  $(".menu__container").click(function () {
+    $(".menu").toggle(500);
+    $(".menu__container").toggleClass("bright");
+    $(".fa-bars").toggleClass("bright2");
+  });
+
+  var vw = Math.max(
+    document.documentElement.clientWidth,
+    window.innerWidth || 0
+  );
+
+  if (vw < 785) {
+    $(".menu").hide();
+  }
+
+  $(window).on("load", function () {
+    vw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+
+    if (vw < 785) {
+      $(".menu").hide();
+    } else {
+      $(".menu").show();
+    }
+  });
+
+  $(window).on("resize", function () {
+    vw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+
+    if (vw < 785) {
+      $(".menu").hide();
+    } else {
+      $(".menu").show();
+    }
+  });
+});
