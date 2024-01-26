@@ -253,7 +253,7 @@ li {
   height: 370px;
 }
 
-/* ========================BANNER=========================== */
+
 
 /* ========================PROJECTS=========================== */
 
@@ -334,6 +334,7 @@ li {
   -webkit-box-shadow: 0px 0px 36px 0px rgba(245, 243, 243, 0.75);
   -moz-box-shadow: 0px 0px 36px 0px rgba(245, 243, 243, 0.75);
   border-radius: 5px;
+  transition: all linear 0.3s;
 }
 
 .p:hover {
@@ -341,6 +342,24 @@ li {
   -webkit-box-shadow: 0px 0px 36px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 36px 0px rgba(0, 0, 0, 0.75);
 }
+
+.p::after{
+  content: "CLICK TO VISIT";
+  color: white;
+  position: relative;
+  top: 12rem;
+  left: 0;
+  font-size: 4rem;
+  visibility: hidden;
+  background-color: #0306218e;
+  padding: 30rem 1.32rem;
+}
+
+.p:hover::after {
+  visibility: visible;
+}
+
+
 
 .p1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.644), rgba(0, 0, 0, 0.308)),
