@@ -801,8 +801,8 @@
 @media screen and (max-width: 340px) {
   .tools {
     bottom: -19rem;
-    width: 11px;
-    height: 11px;
+    width: 11rem;
+    height: 11rem;
   }
 
   .tools__img {
