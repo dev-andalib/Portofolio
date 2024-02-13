@@ -118,7 +118,7 @@ li {
 .menu ul li a::after {
   content: attr(data-text);
   position: absolute;
-  top: 0;
+  top: .5rem;
   left: 0;
   height: 0;
   /* Change the position of transformed element */
