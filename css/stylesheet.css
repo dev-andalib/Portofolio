@@ -36,7 +36,6 @@ li {
 }
 
 .container {
-  
   width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
@@ -89,10 +88,8 @@ li {
 }
 .fa-bars {
   color: #ffffffab;
-  font-size: 2.5rem; 
+  font-size: 2.5rem;
 }
-
-
 
 .menu ul {
   display: flex;
@@ -118,7 +115,7 @@ li {
 .menu ul li a::after {
   content: attr(data-text);
   position: absolute;
-  top: .5rem;
+  top: 0.5rem;
   left: 0;
   height: 0;
   /* Change the position of transformed element */
@@ -253,15 +250,18 @@ li {
   height: 370px;
 }
 
-
-
 /* ========================PROJECTS=========================== */
 
 #project {
   margin-top: 6rem;
   padding: 1rem;
   padding-bottom: 6rem;
-  background: linear-gradient(45deg, rgba(0, 0, 0, 0.534), 90%, rgba(128, 128, 128, 0.411));
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.534),
+    90%,
+    rgba(128, 128, 128, 0.411)
+  );
 }
 
 .mixit_main {
@@ -343,7 +343,7 @@ li {
   -moz-box-shadow: 0px 0px 36px 0px rgba(0, 0, 0, 0.75);
 }
 
-.p::after{
+.p::after {
   content: "CLICK TO VISIT";
   color: white;
   position: relative;
@@ -358,8 +358,6 @@ li {
 .p:hover::after {
   visibility: visible;
 }
-
-
 
 .p1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.644), rgba(0, 0, 0, 0.308)),
@@ -436,16 +434,15 @@ li {
 
 .about_wrap .photo {
   width: 40rem;
-  overflow: hidden;
   border-radius: 25px;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.438);
 }
 
 .img1 {
   width: 40rem;
-  object-fit: contain;
+  object-fit: cover;
   border-radius: 25px;
   border: 2px solid rgba(255, 255, 255, 0.438);
+  
 }
 
 .photo h2 {
@@ -455,7 +452,6 @@ li {
   font-weight: 600;
   position: relative;
   margin-bottom: 10px;
-
   letter-spacing: 0.2rem;
 }
 
@@ -609,8 +605,6 @@ li {
   text-transform: capitalize;
   color: rgba(240, 255, 255, 0.747);
 }
-
-
 
 /* ============================Scroll BTN============================== */
 .stt {

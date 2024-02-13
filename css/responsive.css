@@ -247,6 +247,7 @@
     padding: 2rem;
     justify-content: center;
     gap: 2rem;
+    overflow: hidden;
   }
 
   .aboutme__info {
@@ -278,11 +279,15 @@
 
   .about_me p {
     width: 37.4rem;
+    background-color: #ffffffc4;
+    border: 3px solid black;
+    font-weight: 700;
+    color: black;
   }
 
   .work {
-    margin-top: 0;
-    width: 38.4rem;
+    margin-top: 5rem;
+    width: 45.4rem;
     padding: 1.5rem;
   }
 
@@ -293,7 +298,7 @@
   }
 
   .contact_wrap {
-    width: 50rem;
+    width: 70rem;
     padding: 1rem 0;
   }
 
@@ -428,6 +433,11 @@
   }
 }
 
+@media screen and (max-width: 739px) {
+  .contact_wrap {
+    width: 50rem;
+  }  
+}
 @media screen and (max-width: 730px) {
   .ban h1 {
     font-size: 5rem;
@@ -544,9 +554,11 @@
   }
 
   .tools {
-    width: 12rem;
-    height: 12rem;
+    width: 11rem;
+    height: 11rem;
   }
+
+  
 
   .tools__img {
     padding-bottom: 0px;
@@ -554,6 +566,7 @@
 
   .tools__img img {
     width: 5rem;
+    margin-top: 1.8rem;
   }
 
   .project_snap {
@@ -590,11 +603,12 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 1rem;
+    margin-top: -11.5rem;
   }
 
   .about_me p {
-    width: 35rem;
+    width: 30rem;
     font-size: 1.4rem;
   }
 
@@ -721,6 +735,8 @@
 
   .aboutme__info {
     width: 30rem;
+    margin-top: 2.5rem;
+
   }
 
   .about_wrap .photo {
@@ -800,13 +816,13 @@
 
 @media screen and (max-width: 340px) {
   .tools {
-    bottom: -19rem;
+    
     width: 11rem;
     height: 11rem;
   }
 
-  .tools__img {
-    margin-top: 15px;
+  .tools__img img{
+    margin-top: 2.1rem;
   }
 
   @keyframes leftToright {
