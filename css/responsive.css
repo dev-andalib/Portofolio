@@ -240,6 +240,10 @@
   .mixit_btn button {
     font-size: 0.9rem;
   }
+
+  #project{
+    height: 190rem;
+  }
 }
 
 @media screen and (max-width: 850px) {
@@ -250,9 +254,7 @@
     overflow: hidden;
   }
 
-  .aboutme__info {
-    width: 40rem;
-  }
+
 
   .about_wrap .photo {
     width: 45rem;
@@ -275,6 +277,7 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
+    padding-top: 9rem;
   }
 
   .about_me p {
@@ -283,10 +286,11 @@
     border: 3px solid black;
     font-weight: 700;
     color: black;
+    font-size: 1.2rem;
   }
 
   .work {
-    margin-top: 5rem;
+    margin-top: 6rem;
     width: 45.4rem;
     padding: 1.5rem;
   }
@@ -483,6 +487,10 @@
       left: 63%;
     }
   }
+
+  #project{
+    height: 320rem;
+  }
 }
 
 @media screen and (max-width: 660px) {
@@ -538,6 +546,10 @@
 
   .tools {
     bottom: -16rem;
+  }
+
+  #project{
+    height: 155rem;
   }
 }
 
@@ -604,7 +616,7 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    margin-top: -11.5rem;
+    margin-top: -28.5rem;
   }
 
   .about_me p {
@@ -735,7 +747,7 @@
 
   .aboutme__info {
     width: 30rem;
-    margin-top: 2.5rem;
+    margin-top: -11.96rem;
 
   }
 

@@ -255,6 +255,7 @@ li {
 #project {
   margin-top: 6rem;
   padding: 1rem;
+  
   padding-bottom: 6rem;
   background: linear-gradient(
     45deg,
@@ -262,7 +263,10 @@ li {
     90%,
     rgba(128, 128, 128, 0.411)
   );
+  height: 130rem;
+  transition: height linear 0.3s;
 }
+
 
 .mixit_main {
   display: flex;
@@ -495,7 +499,7 @@ li {
 .bootstrap,
 .tailwind,
 .react,
-.js {
+.js{
   display: flex;
   justify-content: start;
   align-items: center;
